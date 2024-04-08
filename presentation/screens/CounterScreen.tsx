@@ -19,8 +19,15 @@ export const CounterScreen = () => {
 	return (
 		<View style={styles.container}>
 			<Text style={styles.title}>{counter}</Text>
-			<Pressable onPress={increaseCounter} onLongPress={resetCounter}>
-				<Text>+1</Text>
+			<Pressable
+				style={({ pressed }) => [
+					styles.button,
+					pressed && styles.buttonPressed,
+				]}
+				onPress={increaseCounter}
+				onLongPress={resetCounter}
+			>
+				<Text style={{ color: "white" }}>Increment</Text>
 			</Pressable>
 		</View>
 	);
@@ -36,5 +43,14 @@ const styles = StyleSheet.create({
 		fontSize: 80,
 		color: "black",
 		fontWeight: "300",
+	},
+	button: {
+		backgroundColor: "#5856D6",
+		paddingHorizontal: 20,
+		paddingVertical: 10,
+		borderRadius: 10,
+	},
+	buttonPressed: {
+		backgroundColor: "#4746AB",
 	},
 });
