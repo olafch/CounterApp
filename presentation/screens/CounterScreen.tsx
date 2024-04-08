@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { PrimaryButton } from "../components";
+import { Button } from "react-native-paper";
 
 interface CounterState {
 	initialValue?: number;
@@ -12,11 +13,18 @@ export const CounterScreen = () => {
 	return (
 		<View style={styles.container}>
 			<Text style={styles.title}>{counter}</Text>
-			<PrimaryButton
+			{/* <PrimaryButton
 				label='Increment'
 				onPress={() => setCounter(counter + 1)}
 				onLongPress={() => setCounter(0)}
-			/>
+			/> */}
+			<Button
+				onPress={() => setCounter(counter + 1)}
+				onLongPress={() => setCounter(0)}
+				mode='contained'
+			>
+				Increase
+			</Button>
 		</View>
 	);
 };
