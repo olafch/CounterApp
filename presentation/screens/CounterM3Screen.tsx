@@ -9,18 +9,25 @@ interface CounterState {
 }
 
 export const CounterM3Screen = () => {
-	const [counter, setCounter] = useState(10);
+	const [counter, setCounter] = useState(100);
 
 	return (
 		<View style={globalStyles.centerContainer}>
+			<Icon name='logo-react' size={35} />
 			<Text style={globalStyles.title}>{counter}</Text>
-			{/* <Icon name='accessibility-outline' size={35} /> */}
 			<FAB
-				style={globalStyles.fab}
+				style={globalStyles.fabRight}
 				onPress={() => setCounter(counter + 1)}
 				onLongPress={() => setCounter(0)}
 				// label='+1'
 				icon='add-outline'
+			/>
+			<FAB
+				style={globalStyles.fabLeft}
+				onPress={() => setCounter(counter - 1)}
+				onLongPress={() => setCounter(0)}
+				// label='+1'
+				icon='remove-outline'
 			/>
 		</View>
 	);

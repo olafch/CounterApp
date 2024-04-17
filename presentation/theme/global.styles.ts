@@ -11,10 +11,16 @@ export const globalStyles = StyleSheet.create({
     fontWeight: "300",
     color: "black"
   },
-  fab: {
+  fabRight: {
     position: 'absolute',
     margin: 16,
     right: 0,
+    bottom: 0,
+  },
+  fabLeft: {
+    position: 'absolute',
+    margin: 16,
+    left: 0,
     bottom: 0,
   },
 });
