@@ -4,6 +4,7 @@ import { CounterScreen } from "./presentation/screens/CounterScreen";
 import { PaperProvider } from "react-native-paper";
 import { CounterM3Screen } from "./presentation/screens/CounterM3Screen";
 import IonIcon from "react-native-vector-icons/Ionicons";
+import { BoxObjectModelScreen } from "./presentation/screens/BoxObjectModelScreen";
 
 export default function App() {
 	return (
@@ -15,7 +16,8 @@ export default function App() {
 			<SafeAreaView style={{ flex: 1 }}>
 				{/* <HelloWorldScreen name='Olaf Chwolka' /> */}
 				{/* <CounterScreen /> */}
-				<CounterM3Screen />
+				{/* <CounterM3Screen /> */}
+				<BoxObjectModelScreen />
 			</SafeAreaView>
 		</PaperProvider>
 	);
