@@ -17,9 +17,9 @@ export default function App() {
 			<SafeAreaView style={{ flex: 1 }}>
 				{/* <HelloWorldScreen name='Olaf Chwolka' /> */}
 				{/* <CounterScreen /> */}
-				<CounterM3Screen />
+				{/* <CounterM3Screen /> */}
 				{/* <BoxObjectModelScreen /> */}
-				{/* <DimensionScreen /> */}
+				<DimensionScreen />
 			</SafeAreaView>
 		</PaperProvider>
 	);
