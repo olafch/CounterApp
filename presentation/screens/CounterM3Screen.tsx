@@ -10,20 +10,21 @@ interface CounterState {
 
 export const CounterM3Screen = () => {
 	const [counter, setCounter] = useState(100);
+	const { title, fabLeft, fabRight, centerContainer } = globalStyles;
 
 	return (
-		<View style={globalStyles.centerContainer}>
+		<View style={centerContainer}>
 			<Icon name='logo-react' size={35} />
-			<Text style={globalStyles.title}>{counter}</Text>
+			<Text style={title}>{counter}</Text>
 			<FAB
-				style={globalStyles.fabRight}
+				style={fabRight}
 				onPress={() => setCounter(counter + 1)}
 				onLongPress={() => setCounter(0)}
 				// label='+1'
 				icon='add-outline'
 			/>
 			<FAB
-				style={globalStyles.fabLeft}
+				style={fabLeft}
 				onPress={() => setCounter(counter - 1)}
 				onLongPress={() => setCounter(0)}
 				// label='+1'
