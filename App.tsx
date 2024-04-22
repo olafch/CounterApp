@@ -8,6 +8,8 @@ import { BoxObjectModelScreen } from "./presentation/screens/BoxObjectModelScree
 import { DimensionScreen } from "./presentation/screens/DimensionScreen";
 import { PositionScreen } from "./presentation/screens/PositionScreen";
 import { FlexScreen } from "./presentation/screens/FlexScreen";
+import { FlexDirectionScreen } from "./presentation/screens/FlexDirectionScreen";
+import { HomeworkScreen } from "./presentation/screens/HomeworkScreen";
 
 export default function App() {
 	return (
@@ -23,7 +25,9 @@ export default function App() {
 				{/* <BoxObjectModelScreen /> */}
 				{/* <DimensionScreen /> */}
 				{/* <PositionScreen /> */}
-				<FlexScreen />
+				{/* <FlexScreen /> */}
+				{/* <FlexDirectionScreen /> */}
+				<HomeworkScreen />
 			</SafeAreaView>
 		</PaperProvider>
 	);
