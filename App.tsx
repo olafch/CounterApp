@@ -1,15 +1,14 @@
-import { SafeAreaView } from "react-native";
-import { HelloWorldScreen } from "./presentation/screens/HelloWorldScreen";
-import { CounterScreen } from "./presentation/screens/CounterScreen";
-import { PaperProvider } from "react-native-paper";
-import { CounterM3Screen } from "./presentation/screens/CounterM3Screen";
-import IonIcon from "react-native-vector-icons/Ionicons";
-import { BoxObjectModelScreen } from "./presentation/screens/BoxObjectModelScreen";
-import { DimensionScreen } from "./presentation/screens/DimensionScreen";
-import { PositionScreen } from "./presentation/screens/PositionScreen";
-import { FlexScreen } from "./presentation/screens/FlexScreen";
-import { FlexDirectionScreen } from "./presentation/screens/FlexDirectionScreen";
-import { HomeworkScreen } from "./presentation/screens/HomeworkScreen";
+import { SafeAreaView } from 'react-native';
+import { HelloWorldScreen } from './presentation/screens/HelloWorldScreen';
+import { CounterScreen } from './presentation/screens/CounterScreen';
+import { PaperProvider } from 'react-native-paper';
+import { CounterM3Screen } from './presentation/screens/CounterM3Screen';
+import IonIcon from 'react-native-vector-icons/Ionicons';
+import { BoxObjectModelScreen } from './presentation/screens/BoxObjectModelScreen';
+import { DimensionScreen } from './presentation/screens/DimensionScreen';
+import { PositionScreen } from './presentation/screens/PositionScreen';
+import { FlexScreen } from './presentation/screens/FlexScreen';
+import { FlexDirectionScreen } from './presentation/screens/FlexDirectionScreen';
 
 export default function App() {
 	return (
@@ -21,13 +20,12 @@ export default function App() {
 			<SafeAreaView style={{ flex: 1 }}>
 				{/* <HelloWorldScreen name='Olaf Chwolka' /> */}
 				{/* <CounterScreen /> */}
-				{/* <CounterM3Screen /> */}
+				<CounterM3Screen />
 				{/* <BoxObjectModelScreen /> */}
 				{/* <DimensionScreen /> */}
 				{/* <PositionScreen /> */}
 				{/* <FlexScreen /> */}
 				{/* <FlexDirectionScreen /> */}
-				<HomeworkScreen />
 			</SafeAreaView>
 		</PaperProvider>
 	);
